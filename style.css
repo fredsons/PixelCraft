@@ -1,0 +1,41 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-gradient {
+    background: linear-gradient(to right, #4f46e5, #6366f1, #818cf8);
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #4f46e5, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.scroll-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+}
